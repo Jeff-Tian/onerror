@@ -31,7 +31,7 @@ module.exports = function onerror(app, options) {
     // to node-style callbacks.
     if (err == null) return;
 
-    // ignore all pedding request stream
+    // ignore all pending request stream
     if (this.req) sendToWormhole(this.req);
 
     // wrap non-error object
